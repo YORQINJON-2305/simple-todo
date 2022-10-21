@@ -31,18 +31,20 @@ elBtn.addEventListener("click", function (evt){
         const newAddBtn = document.createElement("button");
 
         // New element assigment value
-        newItem.classList.add("p-4", "bg-success", "rounded", "d-flex", "mb-4", "align-items-center", "me-3")
-        newNumber.classList.add("me-2", "d-inline-block", "text-white");
         newNumber.textContent = arr[i].id + ".";
-        newInput.classList.add("form-check-input", "me-3");
-        newInput.setAttribute("type", "checkbox")
         newText.textContent = arr[i].text;
+        newDeleteBtn.textContent = "Delete"
+        newAddBtn.textContent = "Add"
+
+        //Styles
+        newItem.classList.add("p-4", "bg-success", "rounded", "d-flex", "mb-4", "align-items-center", "me-3");
+        newNumber.classList.add("me-2", "d-inline-block", "text-white");
+        newInput.classList.add("form-check-input", "me-3");
+        newInput.setAttribute("type", "checkbox");
         newText.classList.add("me-4", "mb-0", "text-white", "fs-3")
         newBtnWrap.classList.add("d-flex", "align-items-center");
         newDeleteBtn.classList.add("btn", "btn-danger", "me-3");
-        newDeleteBtn.textContent = "Delete"
-        newAddBtn.classList.add("btn", "btn-primary")
-        newAddBtn.textContent = "Add"
+        newAddBtn.classList.add("btn", "btn-primary");
 
         // Element appendChild
         newItem.appendChild(newNumber);
